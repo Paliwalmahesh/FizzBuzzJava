@@ -10,16 +10,15 @@ public class FizzBuzz {
 				if(loop_input_number%3==0) {
 					result=result+"Fizz";
 				}
+				else if(loop_input_number%5==0) {
+					result=result+"Buzz";
+				}
 				else {
 					result=result+loop_input_number;
-				}
-				
-			}
-			
+				}	
+			}	
 		}
-		
 		return result;
-		
 	}
 
 

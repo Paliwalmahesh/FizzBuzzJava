@@ -7,7 +7,7 @@ class FizzBuzzKataTest {
 	FizzBuzz fizzbuzz=new FizzBuzz();
 
 	@Test
-	void test_of_0() {
+	void verify_invalid_input() {
 		assertEquals("-1",fizzbuzz.Print_Fizz_Buzz(0));
 	}
 	@Test
@@ -15,8 +15,11 @@ class FizzBuzzKataTest {
 		assertEquals("1",fizzbuzz.Print_Fizz_Buzz(1));
 	}
 	@Test
-	void test_of_3() {
+	void checking_multiple_3() {
 		assertEquals("12Fizz",fizzbuzz.Print_Fizz_Buzz(3));
 	}
-
+	@Test
+	void checking_multiple_5() {
+		assertEquals("12Fizz4Buzz",fizzbuzz.Print_Fizz_Buzz(5));
+	}
 }
