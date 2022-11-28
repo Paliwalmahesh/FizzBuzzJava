@@ -22,4 +22,8 @@ class FizzBuzzKataTest {
 	void checking_multiple_5() {
 		assertEquals("12Fizz4Buzz",fizzbuzz.Print_Fizz_Buzz(5));
 	}
+	@Test
+	void checking_multiple_3_and_5() {
+		assertEquals("12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzz",fizzbuzz.Print_Fizz_Buzz(15));
+	}
 }

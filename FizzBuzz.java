@@ -7,7 +7,10 @@ public class FizzBuzz {
 		}
 		else {
 			for(int loop_input_number=1;loop_input_number<=input_number;loop_input_number++) {
-				if(loop_input_number%3==0) {
+				if(loop_input_number%3==0 && loop_input_number%5==0) {
+					result=result+"FizzBuzz";
+				}
+			    else if(loop_input_number%3==0) {
 					result=result+"Fizz";
 				}
 				else if(loop_input_number%5==0) {
